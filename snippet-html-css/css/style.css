@@ -1,0 +1,45 @@
+body {
+  background-color: aquamarine;
+
+}
+
+div {
+  font-family: "arial";
+  background-color: blue;
+  margin: 10px 10px;
+  text-align: center;
+  font-weight: bolder;
+  padding: 15px 30px;
+  width: 200px;
+  height: 200px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.triangulo-lateral {
+  transform: translateX(0);
+}
+
+.triangulo-lateral::before {
+  content: '';
+  transition-duration: 0.3s;
+ 
+  border-style: solid;
+  border-width: 15px 15px 15px 0;
+  border-color:transparent
+                blue
+transparent               
+ transparent;
+
+
+  position: absolute;
+  left: 0px;
+
+  top:50%;
+  margin-top: -13px;
+}
+
+.triangulo-lateral:hover::before {
+left: -13px;
+
+}
